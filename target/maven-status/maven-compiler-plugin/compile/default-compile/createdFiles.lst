@@ -1,0 +1,7 @@
+fr\rudy\worldborder\BordersManager.class
+fr\rudy\worldborder\config\Messages.class
+fr\rudy\worldborder\commands\Commands.class
+fr\rudy\worldborder\config\Config.class
+fr\rudy\worldborder\Border.class
+fr\rudy\worldborder\listener\TeleportListener.class
+fr\rudy\worldborder\Main.class

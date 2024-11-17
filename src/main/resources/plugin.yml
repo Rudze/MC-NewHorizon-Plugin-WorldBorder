@@ -1,0 +1,59 @@
+name: NewHorizon-WorldBorder
+version: '0.1'
+main: fr.rudy.worldborder.Main
+api-version: '1.21'
+prefix: NewHorizon-WorldBorder
+author: { Rudy }
+
+softdepend:
+  - Multiverse-Core
+
+permissions:
+  worldborder.help:
+    description: Permet d'accéder à la commande d'aide.
+    default: true
+  worldborder.list:
+    description: Permet d'afficher la liste de tous les mondes et les bordures.
+    default: op
+  worldborder.set:
+    description: Permet de définir une bordure d'un monde.
+    default: op
+  worldborder.delete:
+    description: Permet de supprimer une bordure du monde.
+    default: op
+  worldborder.reload:
+    description: Permet de recharger la configuration du plugin.
+    default: op
+  worldborder.*:
+    description: Donne accès à toutes les commandes de WorldBorder.
+    default: op
+    children:
+      worldborder.set: true
+      worldborder.remove: true
+      worldborder.reload: true
+      worldborder.list: true
+
+commands:
+  border:
+    description: Commande WorldBorder pour gérer les bordures du monde.
+    usage: /border <subcommand>
+    aliases: [ worldborder ]
+    permission: worldborder.help
+    subcommands:
+      help:
+        description: Afficher l'aide du plugin WorldBorder
+        usage: /border help
+        permission: worldborder.help
+      set:
+        description: Fixer une bordure dans un monde spécifique
+        usage: /border set <world> <size> [centerX] [centerY]
+        permission: worldborder.set
+      delete:
+        description: Supprime la bordure d'un monde.
+        usage: /border delete <world>
+        permission: worldborder.delete
+      list:
+        description: Afficher la liste de tous les mondes et de toutes les bordures.
+        usage: /border list
+        permission: worldborder.list
+

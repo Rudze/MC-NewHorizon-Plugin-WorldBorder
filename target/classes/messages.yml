@@ -1,0 +1,5 @@
+# When a teleport is out of border
+# - {world} : replaced by the word name
+out-of-border-teleport: "&cVous ne pouvez pas vous téléporter à l'extérieur de la bordure du monde '{world}'."
+
+permission-command: "&4Vous n'avez pas les permissions pour faire ça !"
