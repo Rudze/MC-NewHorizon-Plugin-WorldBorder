@@ -1,8 +1,7 @@
-name: NewHorizon-WorldBorder
-version: 'v0.1'
+name: xWorldBorder
+version: '0.1'
 main: fr.rudy.worldborder.Main
 api-version: '1.21'
-prefix: NewHorizon-WorldBorder
 author: { Rudy }
 
 softdepend:

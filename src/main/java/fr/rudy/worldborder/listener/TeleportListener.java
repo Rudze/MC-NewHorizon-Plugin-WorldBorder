@@ -16,10 +16,10 @@ public class TeleportListener implements Listener {
     @EventHandler
     public void onPlayerTeleport(PlayerTeleportEvent event) {
         if (plugin.getMyConfig().isDisableOutOfBorderTeleport()) {
-            if (plugin.getManager().isInBorder(event.getTo())) {
-                event.setCancelled(true);
-                event.getPlayer().sendMessage(plugin.getMessages().getOutOfBorderTeleport(event.getTo().getWorld().getName()));
-            }
+//            if (plugin.getManager().isInBorder(event.getTo())) {
+//                event.setCancelled(true);
+//                event.getPlayer().sendMessage(plugin.getMessages().getOutOfBorderTeleport(event.getTo().getWorld().getName()));
+//            }
         }
     }
 

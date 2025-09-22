@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fr.rudy.newhorizon</groupId>
-    <artifactId>NewHorizon-WorldBorder</artifactId>
-    <version>0.1</version>
+    <artifactId>xWorldBorder</artifactId>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>NewHorizon-WorldBorder</name>
